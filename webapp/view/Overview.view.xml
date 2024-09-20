@@ -1,0 +1,10 @@
+<mvc:View controllerName="searchvec.controller.Overview"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m" xmlns:u="sap.ui.unified">
+    <Page id="page" title="{i18n>title}">
+        <content>
+        <u:FileUploader id="_idFileUploader" icon="sap-icon://upload" fileType="pdf" sameFilenameAllowed="true" uploadOnChange="false" useMultipart="false" iconOnly="false" buttonOnly="true" buttonText="Upload Records" iconFirst="true" style="Accept" placeholder="Choose File.." uploadComplete="handleUploadComplete" change="onPressUpload" />
+        <Text id="resultText" text="Upload a PDF to see the result here." ></Text>
+        </content>
+    </Page>
+</mvc:View>
